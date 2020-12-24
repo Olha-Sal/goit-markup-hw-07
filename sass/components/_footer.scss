@@ -29,6 +29,8 @@ address {
   letter-spacing: 0.03em;
   color: $footer-nav-color;
   transition: $timing-function;
+}
+
 .footer-nav a:focus {
   color: $accent-text-color;
 }
@@ -108,6 +110,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .mailing {
   display: flex;
 }
