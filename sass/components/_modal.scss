@@ -6,7 +6,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function;
 }
 
 .backdrop.is-hidden {
@@ -24,12 +24,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms $timing-function;
 
   min-width: 528px;
   min-height: 581px;
   padding: 40px;
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -57,7 +57,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: 250ms var(--timing-function);
+  transition: 250ms $timing-function;
 }
 
 /*Form*/
@@ -85,7 +85,7 @@
 
 .form-label {
   margin-bottom: 4px;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -94,25 +94,26 @@
 
 .modal input:focus,
 .modal textarea:focus {
-  border-color: var(--accent-text-color);
+  border-color: $accent-text-color;
   outline: none;
   cursor: pointer;
 }
 .modal input::placeholder {
   cursor: pointer;
 }
+
 .modal input:focus::placeholder {
   cursor: pointer;
 }
 
 .modal input:focus ~ svg {
-  fill: var(--accent-text-color);
+  fill: $accent-text-color;
   cursor: pointer;
 }
 
 .form-input:focus + .icon {
-  fill: var(--accent-text-color);
-  transition: 250ms var(--timing-function);
+  fill: $accent-text-color;
+  transition: 250ms $timing-function;
 }
 
 .icon {
@@ -158,11 +159,11 @@
   line-height: 24px;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .form-check a {
-  color: #2196f3;
+  color: $accent-text-color;
   text-decoration: underline;
 }
 
@@ -192,13 +193,13 @@
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  box-shadow: 0 0 0 2px var(--primery-heading-color);
+  box-shadow: 0 0 0 2px $primery-heading-color;
 }
 
 .check-input:checked + .check-box::after {
-  transition: 1000ms var(--timing-function);
-  box-shadow: 0 0 0 2px var(--accent-text-color);
-  background-color: var(--accent-text-color);
+  transition: 250ms $timing-function;
+  box-shadow: 0 0 0 2px $accent-text-color;
+  background-color: $accent-text-color;
   background-image: url(../images/icons/check2.svg);
 }
 
@@ -209,12 +210,12 @@
   width: 16px;
   height: 15px;
   border-radius: 1px;
-  box-shadow: 0 0 0 2px var(--primery-heading-color);
+  box-shadow: 0 0 0 2px $primery-heading-color;
 }
 
 .check-input:checked + .check-box {
-  box-shadow: 0 0 0 2px var(--accent-text-color);
-  background-color: var(--accent-text-color);
+  box-shadow: 0 0 0 2px $accent-text-color;
+  background-color: $accent-text-color;
   background-image: url(../images/icons/check2.svg);
 } */
 
@@ -235,7 +236,7 @@
 }
 
 .check-input:checked + svg {
-  background-color: var(--accent-text-color);
+  background-color: $accent-text-color;
   background-image: url(../images/icons/symbol-defs.svg#icon-check);
   background-size: contain;
   background-origin: border-box;
@@ -259,8 +260,8 @@
   align-self: center;
   max-width: 200px;
   height: 50px;
-  color: var(--primary-white-color);
-  background-color: #2196f3;
+  color: $primary-white-color;
+  background-color: $accent-text-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -276,7 +277,7 @@
   padding-right: 55px;
   padding-left: 56px;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function;
 }
 
 .submit:hover,

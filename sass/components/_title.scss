@@ -3,7 +3,7 @@
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--dark-bg-color);
+  background-color: $dark-bg-color;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -27,7 +27,7 @@
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 
 .order {
@@ -42,10 +42,10 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 
-  background: var(--accent-text-color);
-  box-shadow: 0px 4px 4px var(--shadow-box-color);
+  background: $accent-text-color;
+  box-shadow: 0px 4px 4px $shadow-box-color;
 
-  transition: 250ms var(--timing-function);
+  transition: 250ms $timing-function;
 }

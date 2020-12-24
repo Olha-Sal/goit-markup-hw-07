@@ -21,7 +21,7 @@
   display: block;
   content: "";
   height: 120px;
-  background-color: var(--main-bg-color);
+  background-color: $main-bg-color;
   background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
@@ -50,7 +50,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primery-heading-color);
+  color: $primery-heading-color;
 }
 
 .feauture p {
@@ -58,7 +58,7 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .about {
@@ -68,5 +68,5 @@
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primery-heading-color);
+  color: $primery-heading-color;
 }

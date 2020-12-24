@@ -32,9 +32,8 @@
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--main-icons-color);
-  transition: border-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
+  color: $main-icons-color;
+  transition: border-color 250ms $timing-function, color 250ms $timing-function;
 }
 
 .client-icon {
@@ -43,6 +42,6 @@
 
 .client-link:hover,
 .client-link:focus {
-  border-color: var(--accent-text-color);
-  color: var(--accent-text-color);
+  border-color: $accent-text-color;
+  color: $accent-text-color;
 }
