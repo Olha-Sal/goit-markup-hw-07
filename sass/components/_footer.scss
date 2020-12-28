@@ -10,7 +10,15 @@ address {
   margin-top: 20px;
 }
 
-.lower-logo {
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer__contacts {
+  margin-right: 70px;
+}
+
+.footer__logo {
   display: flex;
   font-family: Raleway;
   font-weight: 700;
@@ -18,37 +26,28 @@ address {
   color: $primary-white-color;
 }
 
-.footer-nav li:not(:last-child) {
+.footer__nav li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-nav a {
+.footer__nav a {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: $footer-nav-color;
   transition: $timing-function;
+
+  &:focus {
+    color: $accent-text-color;
+  }
 }
 
-.footer-nav a:focus {
-  color: $accent-text-color;
-}
-
-.footer-nav .map {
+.footer__nav .map {
   color: $primary-white-color;
 }
 
-.footer-contacts {
-  margin-right: 70px;
-}
-
-.container.footer {
-  display: flex;
-  align-items: baseline;
-}
-
-.join {
+.footer__text {
   display: block;
   margin-bottom: 20px;
   font-family: Roboto, sans-serif;
@@ -62,12 +61,17 @@ address {
   color: $primary-white-color;
 }
 
-.footer-socials .socials {
+.socials-list__footer {
   margin-left: 0;
   margin-right: auto;
+  display: flex;
 }
 
-.footer-socials .social-link {
+.social-item__footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link__footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,45 +81,35 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   color: $primary-white-color;
   transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+  }
 }
 
-.footer-socials .social-icon {
+.social-icon__footer {
   width: 20px;
   height: 20px;
   fill: currentColor;
   transition: fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
 }
 
-.social-link:hover,
-.social-link:focus {
-  background-color: $accent-text-color;
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  fill: currentColor;
-}
-
-.subscription {
+.footer__subscription {
   display: block;
   margin-left: 90px;
 }
 
-.subscription b {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.mailing {
+.footer__mailing {
   display: flex;
 }
 
-.mailing input {
+.footer__input {
   margin-right: 12px;
   padding: 15px 16px;
   width: 358px;
@@ -126,19 +120,19 @@ address {
   color: $primary-white-color;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  &::placeholder {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
-.footer-input::placeholder {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe {
+.footer__subscribe {
   display: flex;
   border-radius: 4px;
   padding: 11px 34px;
@@ -157,20 +151,20 @@ address {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-}
 
-.subscribe::after {
-  display: inline-block;
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  transition: background 250ms $timing-function;
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    transition: background 250ms $timing-function;
 
-  background-image: url("../images/icons/icon-send.svg");
-}
+    background-image: url("../images/icons/icon-send.svg");
+  }
 
-.subscribe:hover,
-.subscribe:focus {
-  background: #188ce8;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
 }

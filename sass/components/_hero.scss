@@ -1,4 +1,4 @@
-.title {
+.hero {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -18,7 +18,7 @@
   align-content: center;
 }
 
-.hero {
+.hero__title {
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
@@ -30,7 +30,7 @@
   color: $primary-white-color;
 }
 
-.order {
+.hero__button {
   display: inline-block;
   border-radius: 4px;
   padding: 11px 34px;

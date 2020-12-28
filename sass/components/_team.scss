@@ -10,7 +10,7 @@
   font-size: 16px;
 }
 
-.team h2 {
+.team__title {
   margin: 0 0 50px 0;
   font-weight: 700;
   font-size: 36px;
@@ -34,27 +34,27 @@
   color: $primary-text-color;
 }
 
-.team-expert {
+.team__list {
   display: flex;
 }
 
-.team-expert .expert:not(:last-child) {
-  margin-right: 30px;
-}
-
-.expert {
+.team__expert {
   background-color: $primary-white-color;
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.expert img {
+.team__expert img {
   display: block;
 }
 
-.extert-name {
+.team__name {
   padding: 30px 32px;
 }
 
