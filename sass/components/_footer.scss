@@ -20,7 +20,7 @@ address {
 
 .footer__logo {
   display: flex;
-  font-family: Raleway;
+  font-family: $logo_font;
   font-weight: 700;
   font-size: 26px;
   color: $primary-white-color;
@@ -50,7 +50,6 @@ address {
 .footer__text {
   display: block;
   margin-bottom: 20px;
-  font-family: Roboto, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
