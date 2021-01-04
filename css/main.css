@@ -1,50 +1,57 @@
 @charset "UTF-8";
+/* raleway-700 - latin_cyrillic */
 @font-face {
   font-family: "Raleway";
-  src: url("../../fonts/Raleway Bold.eot");
-  src: url("../../fonts/Raleway Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Raleway Bold.woff2") format("woff2"), url("../../fonts/Raleway Bold.woff") format("woff"), url("../../fonts/Raleway Bold.ttf") format("truetype"), url("../../fonts/Raleway Bold.svg#Raleway Bold") format("svg");
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/raleway.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway.woff2") format("woff2"), url("../fonts/raleway.woff") format("woff"), url("../fonts/raleway.ttf") format("truetype"), url("../fonts/raleway.svg#Raleway") format("svg");
+  /* Legacy iOS */
 }
 
+/* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto.eot");
-  src: url("../../fonts/Roboto.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto.woff2") format("woff2"), url("../../fonts/Roboto.woff") format("woff"), url("../../fonts/Roboto.ttf") format("truetype"), url("../../fonts/Roboto.svg") format("svg");
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
+  src: url("../fonts/roboto-v20-latin_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
 }
 
-@font-face {
-  font-family: "Roboto Medium";
-  src: url("../fonts/Roboto Medium.eot");
-  src: url("../fonts/Roboto Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto Medium.woff2") format("woff2"), url("../fonts/Roboto Medium.woff") format("woff"), url("../fonts/Roboto Medium.ttf") format("truetype"), url("../fonts/Roboto Medium.svg#Roboto Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-}
-
+/* roboto-500 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto Bold.eot");
-  src: url("../fonts/Roboto Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto Bold.woff2") format("woff2"), url("../fonts/Roboto Bold.woff") format("woff"), url("../fonts/Roboto Bold.ttf") format("truetype"), url("../fonts/Roboto Bold.svg") format("svg");
-  font-weight: 700;
   font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v20-latin_cyrillic-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg");
+  /* Legacy iOS */
 }
 
+/* roboto-700 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto Black";
-  src: url("../../fonts/Roboto Black.eot");
-  src: url("../../fonts/Roboto Black.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto Black.woff2") format("woff2"), url("../../fonts/Roboto Black.woff") format("woff"), url("../../fonts/Roboto Black.ttf") format("truetype"), url("../../fonts/Roboto Black.svg#Roboto Black") format("svg");
-  font-weight: 900;
+  font-family: "Roboto";
   font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v20-latin_cyrillic-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto") format("svg");
+  /* Legacy iOS */
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v20-latin_cyrillic-900.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg");
+  /* Legacy iOS */
 }
 
 *,
@@ -75,7 +82,15 @@ p {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 header {
@@ -93,7 +108,7 @@ header {
   padding-bottom: 25px;
   margin-right: 93px;
   color: #000000;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -122,7 +137,6 @@ nav {
   padding: 32px 0;
   display: flex;
   color: #000000;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -146,7 +160,6 @@ nav {
 
 .contacts .contacts-link {
   color: #757575;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -297,6 +310,7 @@ nav {
 
 .feauture__thumb h3 {
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -305,6 +319,7 @@ nav {
 }
 
 .feauture__thumb p {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -522,7 +537,7 @@ address {
 
 .footer__logo {
   display: flex;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   color: #ffffff;
@@ -552,7 +567,6 @@ address {
 .footer__text {
   display: block;
   margin-bottom: 20px;
-  font-family: Roboto, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
